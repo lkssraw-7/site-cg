@@ -1,0 +1,266 @@
+.service-page { --accent: #b94300; --accent-bright: #ff760b; --soft: #f4f3f1; background: #fff; }
+.solar-page { --accent: #262170; --accent-bright: #f48120; --soft: #f4f4f9; }
+.dreamhome-page { --accent: #24272a; --accent-bright: #d6c8b9; --soft: #f5f3f0; }
+.service-page .site-header { position: relative; color: var(--foreground); background: #fff; }
+.service-page .header-inner { height: 87px; border-color: #e8e8e8; }
+.service-page .desktop-nav a { color: #313b49; }
+.service-page .desktop-nav a:hover { color: var(--accent); }
+.service-page .menu-toggle { color: #17212c; border-color: #d8dde2; }
+.service-page .site-header.is-open { background: #fff; }
+.service-page .mobile-nav { background: #fff; border-color: #d8dde2; }
+.service-page .mobile-nav a:not(.button) { color: #17212c; }
+.service-page .section-pad { padding-block: 84px; }
+.service-hero { min-height: 630px; position: relative; isolation: isolate; display: flex; align-items: center; color: #fff; overflow: hidden; }
+.service-hero-photo { position: absolute; inset: 0; z-index: -3; }
+.service-hero-photo img { object-fit: cover; object-position: center; }
+.service-hero-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg,#101821ed 0%,#111a24c7 38%,#111a2430 72%,transparent); }
+.service-hero-content { padding-block: 39px 62px; }
+.back-to-group { display: inline-flex; align-items: center; gap: 9px; color: #dde1e6; font-size: 10px; margin-bottom: 30px; min-height: 28px; }
+.back-to-group:hover { text-decoration: underline; text-underline-offset: 5px; }
+.hero-company-brand { margin-bottom: 24px; width: fit-content; }
+.engineering-page .hero-company-brand { background: #fff; border-radius: 4px; padding: 8px 16px; color: #17212c; }
+.service-hero h1 { font-size: clamp(36px,3.45vw,51px); line-height: 1.16; letter-spacing: -.043em; font-weight: 800; max-width: 680px; margin: 0 0 23px; }
+.service-hero-description { font-size: 14px; line-height: 1.85; max-width: 490px; color: #d9e0e7; margin: 0; }
+.service-hero-actions { display: flex; gap: 13px; flex-wrap: wrap; margin-top: 29px; }
+.service-benefit-strip { border-bottom: 1px solid #e8e9ec; background: #fafaf9; }
+.service-benefit-strip > .container { display: grid; grid-template-columns: repeat(4,1fr); }
+.service-benefit-strip > .container > div { padding: 25px 20px; display: flex; align-items: center; gap: 14px; font-size: 11px; font-weight: 700; border-right: 1px solid #e8e9ec; }
+.service-benefit-strip > .container > div:first-child { padding-left: 0; }
+.service-benefit-strip > .container > div:last-child { border-right: 0; }
+.service-benefit-strip svg { color: var(--accent); flex-shrink: 0; }
+.service-heading { margin-bottom: 34px; max-width: 720px; }
+.service-heading > .eyebrow { color: var(--accent); margin-bottom: 12px; font-size: 9px; }
+.service-heading h2 { font-size: clamp(28px,2.7vw,39px); line-height: 1.2; letter-spacing: -.04em; font-weight: 800; margin: 0; }
+.service-heading > p:last-child:not(.eyebrow) { color: #647080; font-size: 13px; line-height: 1.8; margin-top: 16px; max-width: 600px; }
+.service-heading--light h2 { color: #fff; }
+.service-heading--light > .eyebrow { color: #e8b48b; }
+.service-heading--light > p:last-child:not(.eyebrow) { color: #bbc3cc; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
+.about-grid .service-heading { margin-bottom: 0; }
+.about-grid > div > p { color: #63707d; font-size: 13px; line-height: 1.9; margin: 0 0 18px; }
+.about-grid > div > .lead-text { color: #28313c; font-size: 18px; font-weight: 650; line-height: 1.65; }
+.service-section { background: var(--soft); }
+.services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.service-card { background: #fff; border: 1px solid #e4e5e8; border-radius: 7px; overflow: hidden; }
+.service-card-body { padding: 29px; }
+.service-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.service-card-top svg { color: var(--accent); }
+.service-card-top > span { font-size: 10px; color: #7a8590; letter-spacing: .1em; }
+.service-card h3 { font-size: 16px; letter-spacing: -.025em; font-weight: 750; margin: 0 0 12px; }
+.service-card p { color: #626e7b; font-size: 12px; line-height: 1.85; margin: 0; }
+.segments-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 25px; }
+.segment { display: flex; gap: 23px; align-items: center; padding: 28px 0; border-top: 1px solid #d9dfe4; }
+.segment svg { flex-shrink: 0; color: var(--accent); }
+.segment h3 { font-size: 17px; font-weight: 750; letter-spacing: -.02em; margin: 0 0 8px; }
+.segment p { font-size: 12px; line-height: 1.7; color: #647080; margin: 0; }
+.process-section { background: #17212c; color: #fff; }
+.process-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 30px; padding-top: 15px; }
+.process-step { border-top: 1px solid #ffffff3a; padding-top: 23px; }
+.process-number { display: block; color: #ff9e54; font-size: 27px; letter-spacing: -.05em; font-weight: 650; margin-bottom: 23px; }
+.process-step h3 { font-weight: 750; font-size: 16px; margin: 0 0 12px; }
+.process-step p { color: #b8c3ce; font-size: 12px; line-height: 1.8; margin: 0; }
+.process-note { color: #a9b4be; font-size: 10px; line-height: 1.8; margin-top: 30px; max-width: 720px; }
+.project-reference { display: flex; align-items: center; gap: 30px; background: #f5f5f3; padding: 38px; border-radius: 7px; border: 1px solid #e5e5e3; }
+.project-reference > svg { flex-shrink: 0; color: var(--accent); }
+.project-reference h3 { font-size: 18px; font-weight: 750; margin: 0 0 10px; }
+.project-reference p { font-size: 12px; line-height: 1.8; color: #647080; max-width: 510px; margin: 0; }
+.project-reference .button { margin-left: auto; flex-shrink: 0; }
+.portfolio-note { font-size: 11px; color: #647080; margin: 18px 0 0; }
+.projects-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.projects-grid--two { grid-template-columns: repeat(2,1fr); }
+.project-card figure { margin: 0; }
+.project-image { position: relative; height: 325px; overflow: hidden; border-radius: 6px; background: #eef0f3; }
+.project-image img, .image-fill img { object-fit: cover; }
+.image-fill { position: absolute; inset: 0; }
+.project-card figcaption { padding-block: 20px; }
+.project-card h3 { margin: 0 0 8px; font-size: 16px; font-weight: 750; }
+.project-card p { font-size: 11px; line-height: 1.7; margin: 0; color: #647080; }
+.source-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #555d6d; font-size: 10px; text-decoration: underline; text-underline-offset: 4px; margin-top: 10px; }
+.company-cta { background: #f3ede7; }
+.company-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 55px; }
+.company-cta .eyebrow { color: var(--accent); margin-bottom: 15px; }
+.company-cta h2 { font-size: clamp(28px,2.8vw,40px); line-height: 1.2; max-width: 720px; margin: 0 0 19px; font-weight: 800; letter-spacing: -.045em; }
+.company-cta p:last-child { font-size: 13px; color: #647080; line-height: 1.8; margin: 0; }
+.company-cta .button { flex-shrink: 0; }
+.ecosystem-nav { padding-block: 31px; border-bottom: 1px solid #e7e8ec; }
+.ecosystem-nav > .container, .ecosystem-nav > .container > div { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.ecosystem-nav a { font-size: 11px; font-weight: 750; color: #26323f; display: flex; align-items: center; gap: 13px; min-height: 44px; }
+.ecosystem-nav a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+.service-page .site-footer { padding-top: 0; }
+.service-page .footer-grid { padding-block: 50px; }
+.solar-page .service-hero { color: #17164b; }
+.solar-page .service-hero-shade { background: linear-gradient(90deg,#f5f7fbfa 0%,#f5f7fbeb 34%,#f5f7fb96 53%,#f5f7fb00 80%); }
+.solar-page .service-hero-description { color: #333d5b; }
+.solar-page .service-hero h1 { max-width: 580px; }
+.solar-page .back-to-group { color: #333d5b; }
+.solar-page .hero-company-brand .solar-logo strong { font-size: 35px; }
+.solar-page .hero-company-brand .solar-symbol { width: 106px; height: 64px; }
+.solar-page .hero-company-brand .company-logo { height: 70px; }
+.solar-page .hero-company-brand .solar-logo small { font-size: 14px; }
+.solar-page .button--outline { border-color: #26217070; color: #262170; background: #ffffff70; }
+.solar-page .button--outline:hover { background: #fff; }
+.solar-page .header-cta { background: var(--solar-blue); color: #fff; border-color: var(--solar-blue); }
+.solar-benefits-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 36px; }
+.solar-benefit > svg { color: var(--solar-blue); margin-bottom: 18px; }
+.solar-benefit h3 { font-size: 16px; font-weight: 750; margin: 0 0 12px; }
+.solar-benefit p { font-size: 12px; line-height: 1.8; color: #647080; margin: 0; }
+.solar-about { background: #262170; color: #fff; }
+.solar-about .service-heading > .eyebrow { color: #ffb77c; }
+.solar-about .about-grid > div > .lead-text { color: #fff; }
+.solar-about .about-grid > div > p { color: #d6d6ed; }
+.solar-page .service-section { background: #fff; }
+.solar-page .service-card { background: #f4f4f9; border-color: #e5e5f0; }
+.solar-page .segments-section { background: #f4f4f9; }
+.process-section--solar { color: #262170; background: #fff; }
+.process-section--solar .process-step { border-color: #d7d5e7; }
+.process-section--solar .process-step p, .process-section--solar .process-note { color: #647080; }
+.process-section--solar .process-number { color: #262170; }
+.process-grid--five { grid-template-columns: repeat(5,1fr); }
+.solar-page .projects-section { background: #f4f4f9; }
+.solar-page .company-cta { background: #262170; color: #fff; }
+.solar-page .company-cta .eyebrow { color: #ffb77c; }
+.solar-page .company-cta p:last-child { color: #d5d6e8; }
+.dreamhome-page .service-hero { min-height: 665px; }
+.dreamhome-page .hero-company-brand { margin-bottom: 35px; }
+.dreamhome-page .hero-company-brand .dreamhome-logo img { width: 265px; filter: url(#brand-white); mix-blend-mode: normal; }
+.dreamhome-page .hero-company-brand .company-logo { height: 75px; }
+.dreamhome-page .service-hero h1 { max-width: 590px; }
+.dreamhome-page .service-hero-shade { background: linear-gradient(90deg,#11100fe8 0%,#11100fb5 36%,#11100f38 70%,#11100f10); }
+.dreamhome-page .service-hero .button--primary { background: #fff; border-color: #fff; color: #25292f; }
+.dreamhome-page .header-cta { background: #303740; border-color: #303740; color: #fff; }
+.services-grid--visual { grid-template-columns: repeat(4,1fr); }
+.services-grid--visual .service-card:not(.service-card--image) { grid-column: span 2; }
+.service-card-image { position: relative; height: 185px; overflow: hidden; }
+.service-card-image > span { position: absolute; right: 6px; bottom: 6px; color: white; background: #111a; font-size: 8px; padding: 2px 5px; }
+.services-grid--visual .service-card-body { padding: 24px; }
+.services-grid--visual .service-card h3 { font-size: 15px; }
+.scene-section { background: #1b1e21; color: #fff; }
+.smart-scenes { display: grid; grid-template-columns: 1.15fr 1fr; border: 1px solid #ffffff23; border-radius: 8px; overflow: hidden; background: #24282d; }
+.scene-image { position: relative; min-height: 560px; }
+.scene-image > img { object-fit: cover; object-position: 70% center; }
+.scene-dimmer { position: absolute; inset: 0; background: #030b19; pointer-events: none; }
+.scene-image-label { position: absolute; top: 24px; left: 24px; display: flex; align-items: center; gap: 9px; background: #151a1ebf; border: 1px solid #ffffff38; border-radius: 4px; font-size: 11px; padding: 10px 14px; }
+.scene-controls { padding: 40px 32px; }
+.scene-controls > .eyebrow { color: #bfc4cc; margin: 0 0 24px; font-size: 9px; }
+.scene-tabs { display: flex; gap: 8px; margin-bottom: 30px; }
+.scene-tabs button { flex: 1; border: 1px solid #ffffff30; border-radius: 4px; padding: 11px 5px; background: transparent; color: #d8dde2; display: flex; flex-direction: column; align-items: center; gap: 9px; font-size: 10px; cursor: pointer; }
+.scene-tabs button[aria-selected="true"] { background: #ece6de; border-color: #ece6de; color: #24282d; }
+.scene-panel { min-height: 265px; }
+.scene-panel[hidden] { display: none; }
+.scene-panel h3 { font-size: 25px; letter-spacing: -.035em; line-height: 1.25; font-weight: 750; margin: 0 0 15px; }
+.scene-panel p { font-size: 12px; color: #c0c6ce; line-height: 1.8; margin: 0; }
+.scene-devices { list-style: none; padding: 0; margin: 25px 0 0; display: grid; gap: 14px; }
+.scene-devices li { display: flex; align-items: center; gap: 15px; }
+.scene-devices svg { color: #d6c8b9; }
+.scene-devices li > span { color: #aab3bd; font-size: 9px; display: flex; flex-direction: column; gap: 3px; }
+.scene-devices strong { font-size: 11px; color: #fff; font-weight: 600; }
+.scene-note { font-size: 9px; line-height: 1.8; color: #b1bac4; margin: 25px 0 0; }
+.dreamhome-page .company-cta { background: #ede8e1; }
+.dreamhome-page .company-cta .button { background: #282e35; color: #fff; border-color: #282e35; }
+@media (max-width:1100px) {
+  .about-grid { gap: 55px; }
+  .service-hero h1 { max-width: 590px; font-size: 43px; }
+  .services-grid--visual { grid-template-columns: repeat(2,1fr); }
+  .services-grid--visual .service-card:not(.service-card--image) { grid-column: span 1; }
+  .project-reference { flex-wrap: wrap; }
+  .project-reference .button { margin-left: 72px; }
+  .scene-controls { padding: 32px 24px; }
+  .process-grid--five { gap: 20px; }
+}
+@media (max-width:800px) {
+  .service-page .header-inner { height: 78px; }
+  .service-page .section-pad { padding-block: 62px; }
+  .service-hero { min-height: 665px; }
+  .service-hero-content { padding-block: 30px 50px; }
+  .service-hero h1 { font-size: 39px; max-width: 560px; }
+  .service-hero-shade { background: linear-gradient(90deg,#111a24ed,#111a24b3 65%,#111a2466); }
+  .service-hero-photo img { object-position: 65% center; }
+  .service-benefit-strip > .container { grid-template-columns: repeat(2,1fr); }
+  .service-benefit-strip > .container > div { padding: 20px 0; border-right: 0; font-size: 10px; }
+  .about-grid { grid-template-columns: 1fr; gap: 27px; }
+  .services-grid { grid-template-columns: repeat(2,1fr); }
+  .segments-grid { gap: 18px; }
+  .segment { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .process-grid { grid-template-columns: repeat(2,1fr); row-gap: 35px; }
+  .projects-grid { gap: 16px; }
+  .project-image { height: 250px; }
+  .solar-benefits-grid { grid-template-columns: repeat(2,1fr); gap: 35px; }
+  .solar-page .service-hero-shade { background: linear-gradient(90deg,#f5f7fbf7,#f5f7fbd6 60%,#f5f7fb6b); }
+  .company-cta-inner { flex-direction: column; align-items: flex-start; gap: 28px; }
+  .ecosystem-nav > .container { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .smart-scenes { grid-template-columns: 1fr; }
+  .scene-image { min-height: 390px; }
+  .scene-controls { padding: 33px; }
+  .scene-panel { min-height: 235px; }
+  .scene-tabs button { flex-direction: row; justify-content: center; }
+}
+@media (max-width:540px) {
+  .service-page .section-pad { padding-block: 51px; }
+  .service-hero, .dreamhome-page .service-hero { min-height: 740px; }
+  .service-hero-content { padding-block: 28px 43px; }
+  .back-to-group { font-size: 9px; margin-bottom: 23px; }
+  .service-hero h1 { font-size: clamp(32px,8.7vw,42px); line-height: 1.17; }
+  .service-hero-description { font-size: 12px; line-height: 1.9; }
+  .service-hero-actions { flex-direction: column; gap: 12px; }
+  .service-hero-actions .button { width: 100%; justify-content: space-between; }
+  .hero-company-brand .company-logo { height: 52px; }
+  .engineering-page .hero-company-brand { padding: 7px 12px; }
+  .hero-company-brand .engineering-logo img { width: 48px; height: 45px; }
+  .hero-company-brand .engineering-logo strong { font-size: 25px; }
+  .service-hero-photo img { object-position: 69% center; }
+  .service-benefit-strip > .container { column-gap: 14px; }
+  .service-benefit-strip > .container > div { gap: 9px; }
+  .service-benefit-strip svg { width: 20px; }
+  .service-heading h2 { font-size: 29px; }
+  .service-heading { margin-bottom: 27px; }
+  .services-grid, .segments-grid, .projects-grid { grid-template-columns: 1fr; }
+  .service-card-body { padding: 25px; }
+  .service-card-top { margin-bottom: 18px; }
+  .segments-grid { gap: 0; }
+  .segment { flex-direction: row; align-items: center; padding: 25px 0; }
+  .process-grid { grid-template-columns: 1fr; gap: 26px; }
+  .process-step { display: grid; grid-template-columns: 45px 1fr; column-gap: 17px; padding-top: 24px; }
+  .process-number { grid-row: span 2; font-size: 25px; margin: 0; }
+  .process-step h3 { margin-bottom: 8px; }
+  .process-step p { grid-column: 2; }
+  .project-reference { padding: 26px; gap: 23px; }
+  .project-reference .button { margin-left: 0; width: 100%; }
+  .project-image { height: 330px; }
+  .ecosystem-nav > .container > div { flex-direction: column; align-items: flex-start; gap: 0; }
+  .ecosystem-nav a { font-size: 12px; }
+  .solar-benefits-grid { gap: 28px 22px; }
+  .solar-benefit h3 { font-size: 14px; }
+  .solar-benefit p { font-size: 11px; }
+  .solar-page .service-hero-shade { background: linear-gradient(90deg,#f5f7fbf5,#f5f7fbbe); }
+  .dreamhome-page .service-hero-shade { background: linear-gradient(90deg,#11100fe6,#11100f8a); }
+  .dreamhome-page .hero-company-brand { margin-bottom: 27px; }
+  .dreamhome-page .hero-company-brand .dreamhome-logo img { width: 235px; }
+  .service-card-image { height: 225px; }
+  .scene-image { min-height: 310px; }
+  .scene-controls { padding: 27px 20px; }
+  .scene-tabs { gap: 6px; }
+  .scene-tabs button { flex-direction: column; font-size: 9px; }
+  .scene-panel { min-height: 290px; }
+  .scene-panel h3 { font-size: 23px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .service-page [data-reveal], .service-page [data-stagger] > *, .service-hero-photo { opacity: 1 !important; transform: none !important; }
+}
+
+.contact-details { margin-top: 35px; border-top: 1px solid currentColor; padding-top: 20px; }
+.contact-details summary { width: fit-content; cursor: pointer; font-size: 12px; font-weight: 700; padding: 10px 0; }
+.contact-details summary:focus-visible, .contact-form :is(input,textarea,select):focus-visible { outline: 3px solid var(--accent-bright); outline-offset: 4px; }
+.contact-form-intro { margin-block: 22px; }
+.contact-form-intro h3 { font-size: 22px; letter-spacing: -.03em; font-weight: 750; margin: 0 0 9px; }
+.contact-form-intro p { font-size: 12px; line-height: 1.8; }
+.contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 19px 24px; max-width: 850px; }
+.contact-form label { display: flex; flex-direction: column; gap: 8px; font-size: 11px; font-weight: 650; }
+.contact-form :is(input,textarea,select) { background: #fff; color: #17212c; border: 1px solid #c6ccd3; border-radius: 4px; padding: 13px 14px; font: inherit; font-size: 14px; min-width: 0; width: 100%; }
+.contact-form textarea { resize: vertical; }
+.form-message { grid-column: 1 / -1; }
+.contact-form .button { justify-self: start; cursor: pointer; }
+.company-cta .form-note { font-size: 10px; line-height: 1.8; align-self: center; }
+.contact-draft { max-width: 850px; padding: 24px; margin-top: 25px; border: 1px solid #b8bec5; border-radius: 5px; }
+.contact-draft p { font-size: 12px; line-height: 1.8; margin-bottom: 18px; }
+.contact-draft pre { font: inherit; font-size: 12px; line-height: 1.8; white-space: pre-wrap; overflow-wrap: anywhere; margin-bottom: 23px; }
+@media(max-width:540px) { .contact-form { grid-template-columns: 1fr; } .contact-details { margin-top: 28px; } }

@@ -1,0 +1,29 @@
+/* Preserva o layout de três marcas no desktop; acrescenta gesto e controles no celular. */
+.button[data-motion] { transition: background .2s ease, border-color .2s ease; }
+.button[data-motion]:hover { transform: none; }
+.companies-viewport { margin: -10px; padding: 10px; overflow: hidden; }
+.company > .company-link { display: block; font-size: inherit; font-weight: inherit; color: inherit; padding: 0; }
+.company > .company-link:hover { text-decoration: none; }
+.company-link > p { color: #647080; font-size: 12px; line-height: 1.85; max-width: 285px; margin: 23px 0 16px; min-height: 67px; }
+.company-discover { font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; gap: 15px; color: var(--orange-deep); min-height: 44px; }
+.company-link:hover .company-discover { text-decoration: underline; text-underline-offset: 4px; }
+.company--solar .company-discover { color: var(--solar-blue); }
+.company--dreamhome .company-discover { color: var(--graphite); }
+.carousel-controls { display: none; }
+@media (max-width:800px) {
+  .companies-grid { display: flex; gap: 0; touch-action: pan-y pinch-zoom; }
+  .companies-grid .company { flex: 0 0 70%; min-width: 0; }
+  .company-link > p { font-size: 11px; min-height: 85px; }
+  .carousel-controls { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 28px; }
+  .carousel-controls > button { border: 1px solid #d8dce0; background: #fff; color: #23303d; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; cursor: pointer; }
+  .carousel-controls > button:disabled { opacity: .35; cursor: default; }
+  .carousel-dots { display: flex; }
+  .carousel-dots button { width: 32px; height: 44px; display: grid; place-items: center; border: 0; background: transparent; cursor: pointer; }
+  .carousel-dots span { width: 6px; height: 6px; background: #c9cdd2; border-radius: 50%; }
+  .carousel-dots button[aria-current="true"] span { background: #b94300; }
+}
+@media (max-width:540px) {
+  .companies-grid .company { flex-basis: 100%; border: 0; padding: 15px 8px; }
+  .company-link > p { font-size: 12px; min-height: 67px; margin: 18px 0 7px; max-width: 100%; }
+  .company-discover { font-size: 12px; }
+}
