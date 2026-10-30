@@ -20,6 +20,6 @@ export const viewport: Viewport = { themeColor: "#111b27" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="pt-BR" className={manrope.variable}><body>
-    <svg width="0" height="0" aria-hidden="true" className="brand-filters"><defs><filter id="brand-white" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -1 -1 -1 0 3" /></filter></defs></svg>
+    <svg width="0" height="0" aria-hidden="true" className="brand-filters"><defs><filter id="brand-white" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -1 -1 -1 3 0" /></filter></defs></svg>
     <MotionProvider>{children}</MotionProvider></body></html>;
 }

@@ -1,0 +1,633 @@
+{
+  "layouts": [
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 761.671875,
+        "right": 375,
+        "bottom": 761.671875
+      },
+      "actions": {
+        "x": 20,
+        "y": 432.671875,
+        "width": 335,
+        "height": 116,
+        "right": 355,
+        "bottom": 548.671875
+      },
+      "header": {
+        "x": 20,
+        "y": 0,
+        "width": 335,
+        "height": 80,
+        "right": 355,
+        "bottom": 80
+      },
+      "benefits": {
+        "x": 20,
+        "y": 588.671875,
+        "width": 335,
+        "height": 133,
+        "right": 355,
+        "bottom": 721.671875
+      },
+      "textSize": "16px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 800,
+        "right": 768,
+        "bottom": 800
+      },
+      "actions": {
+        "x": 32,
+        "y": 510.125,
+        "width": 704,
+        "height": 52,
+        "right": 736,
+        "bottom": 562.125
+      },
+      "header": {
+        "x": 32,
+        "y": 0,
+        "width": 704,
+        "height": 84,
+        "right": 736,
+        "bottom": 84
+      },
+      "benefits": {
+        "x": 32,
+        "y": 652.21875,
+        "width": 704,
+        "height": 115.78125,
+        "right": 736,
+        "bottom": 768
+      },
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 820,
+        "right": 1024,
+        "bottom": 820
+      },
+      "actions": {
+        "x": 32,
+        "y": 522.5,
+        "width": 960,
+        "height": 52,
+        "right": 992,
+        "bottom": 574.5
+      },
+      "header": {
+        "x": 32,
+        "y": 0,
+        "width": 960,
+        "height": 100,
+        "right": 992,
+        "bottom": 100
+      },
+      "benefits": {
+        "x": 32,
+        "y": 711,
+        "width": 960,
+        "height": 77,
+        "right": 992,
+        "bottom": 788
+      },
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 820,
+        "right": 1440,
+        "bottom": 820
+      },
+      "actions": {
+        "x": 96,
+        "y": 581.375,
+        "width": 1248,
+        "height": 52,
+        "right": 1344,
+        "bottom": 633.375
+      },
+      "header": {
+        "x": 96,
+        "y": 0,
+        "width": 1248,
+        "height": 100,
+        "right": 1344,
+        "bottom": 100
+      },
+      "benefits": {
+        "x": 96,
+        "y": 711,
+        "width": 1248,
+        "height": 77,
+        "right": 1344,
+        "bottom": 788
+      },
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/"
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 78,
+        "width": 375,
+        "height": 673.625,
+        "right": 375,
+        "bottom": 751.625
+      },
+      "actions": {
+        "x": 20,
+        "y": 579.625,
+        "width": 335,
+        "height": 116,
+        "right": 355,
+        "bottom": 695.625
+      },
+      "header": {
+        "x": 20,
+        "y": 0,
+        "width": 335,
+        "height": 78,
+        "right": 355,
+        "bottom": 78
+      },
+      "benefits": null,
+      "textSize": "16px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/cordeiro-engenharia"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 78,
+        "width": 768,
+        "height": 665,
+        "right": 768,
+        "bottom": 743
+      },
+      "actions": {
+        "x": 32,
+        "y": 596.96875,
+        "width": 704,
+        "height": 52,
+        "right": 736,
+        "bottom": 648.96875
+      },
+      "header": {
+        "x": 32,
+        "y": 0,
+        "width": 704,
+        "height": 78,
+        "right": 736,
+        "bottom": 78
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/cordeiro-engenharia"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 87,
+        "width": 1024,
+        "height": 630,
+        "right": 1024,
+        "bottom": 717
+      },
+      "actions": {
+        "x": 32,
+        "y": 593.4375,
+        "width": 960,
+        "height": 52,
+        "right": 992,
+        "bottom": 645.4375
+      },
+      "header": {
+        "x": 32,
+        "y": 0,
+        "width": 960,
+        "height": 87,
+        "right": 992,
+        "bottom": 87
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/cordeiro-engenharia"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 87,
+        "width": 1440,
+        "height": 640.65625,
+        "right": 1440,
+        "bottom": 727.65625
+      },
+      "actions": {
+        "x": 96,
+        "y": 611.65625,
+        "width": 1248,
+        "height": 52,
+        "right": 1344,
+        "bottom": 663.65625
+      },
+      "header": {
+        "x": 96,
+        "y": 0,
+        "width": 1248,
+        "height": 87,
+        "right": 1344,
+        "bottom": 87
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/cordeiro-engenharia"
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 78,
+        "width": 375,
+        "height": 601.3125,
+        "right": 375,
+        "bottom": 679.3125
+      },
+      "actions": {
+        "x": 20,
+        "y": 507.3125,
+        "width": 335,
+        "height": 116,
+        "right": 355,
+        "bottom": 623.3125
+      },
+      "header": {
+        "x": 20,
+        "y": 0,
+        "width": 335,
+        "height": 78,
+        "right": 355,
+        "bottom": 78
+      },
+      "benefits": null,
+      "textSize": "16px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/v3-energia-solar"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 78,
+        "width": 768,
+        "height": 665,
+        "right": 768,
+        "bottom": 743
+      },
+      "actions": {
+        "x": 32,
+        "y": 571.359375,
+        "width": 704,
+        "height": 52,
+        "right": 736,
+        "bottom": 623.359375
+      },
+      "header": {
+        "x": 32,
+        "y": 0,
+        "width": 704,
+        "height": 78,
+        "right": 736,
+        "bottom": 78
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/v3-energia-solar"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 87,
+        "width": 1024,
+        "height": 630,
+        "right": 1024,
+        "bottom": 717
+      },
+      "actions": {
+        "x": 32,
+        "y": 565.5,
+        "width": 960,
+        "height": 52,
+        "right": 992,
+        "bottom": 617.5
+      },
+      "header": {
+        "x": 32,
+        "y": 0,
+        "width": 960,
+        "height": 87,
+        "right": 992,
+        "bottom": 87
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/v3-energia-solar"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 87,
+        "width": 1440,
+        "height": 630,
+        "right": 1440,
+        "bottom": 717
+      },
+      "actions": {
+        "x": 96,
+        "y": 574.09375,
+        "width": 1248,
+        "height": 52,
+        "right": 1344,
+        "bottom": 626.09375
+      },
+      "header": {
+        "x": 96,
+        "y": 0,
+        "width": 1248,
+        "height": 87,
+        "right": 1344,
+        "bottom": 87
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/v3-energia-solar"
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 78,
+        "width": 375,
+        "height": 619.46875,
+        "right": 375,
+        "bottom": 697.46875
+      },
+      "actions": {
+        "x": 20,
+        "y": 525.46875,
+        "width": 335,
+        "height": 116,
+        "right": 355,
+        "bottom": 641.46875
+      },
+      "header": {
+        "x": 20,
+        "y": 0,
+        "width": 335,
+        "height": 78,
+        "right": 355,
+        "bottom": 78
+      },
+      "benefits": null,
+      "textSize": "16px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/dreamhome"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 78,
+        "width": 768,
+        "height": 665,
+        "right": 768,
+        "bottom": 743
+      },
+      "actions": {
+        "x": 32,
+        "y": 564.484375,
+        "width": 704,
+        "height": 52,
+        "right": 736,
+        "bottom": 616.484375
+      },
+      "header": {
+        "x": 32,
+        "y": 0,
+        "width": 704,
+        "height": 78,
+        "right": 736,
+        "bottom": 78
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/dreamhome"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 87,
+        "width": 1024,
+        "height": 665,
+        "right": 1024,
+        "bottom": 752
+      },
+      "actions": {
+        "x": 32,
+        "y": 576.125,
+        "width": 960,
+        "height": 52,
+        "right": 992,
+        "bottom": 628.125
+      },
+      "header": {
+        "x": 32,
+        "y": 0,
+        "width": 960,
+        "height": 87,
+        "right": 992,
+        "bottom": 87
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/dreamhome"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "missingAnchors": [],
+      "brokenImages": [],
+      "hero": {
+        "x": 0,
+        "y": 87,
+        "width": 1440,
+        "height": 665,
+        "right": 1440,
+        "bottom": 752
+      },
+      "actions": {
+        "x": 96,
+        "y": 613.953125,
+        "width": 1248,
+        "height": 52,
+        "right": 1344,
+        "bottom": 665.953125
+      },
+      "header": {
+        "x": 96,
+        "y": 0,
+        "width": 1248,
+        "height": 87,
+        "right": 1344,
+        "bottom": 87
+      },
+      "benefits": null,
+      "textSize": "17px",
+      "headerOverflow": false,
+      "reducedMotion": true,
+      "scrollBehavior": "auto",
+      "route": "/dreamhome"
+    }
+  ],
+  "interactions": [
+    "Skip link, mobile menu click/Tab/Escape/focus exit, anchor navigation, carousel controls/focus, company route",
+    "Required fields, message draft, focus and WhatsApp destination: /cordeiro-engenharia",
+    "Required fields, message draft, focus and WhatsApp destination: /v3-energia-solar",
+    "Required fields, message draft, focus and WhatsApp destination: /dreamhome",
+    "DreamHome tabs with arrow keys, Home/End and visible panel",
+    "Normal motion and rapid scene switching"
+  ],
+  "errors": []
+}

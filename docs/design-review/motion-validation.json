@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "heroInitial": 1,
+      "heroExit": {
+        "opacity": 0.684218,
+        "transform": "matrix(1, 0, 0, 1, 0, -28.9891)"
+      },
+      "textExit": true,
+      "textReentry": true,
+      "focusVisible": true
+    },
+    {
+      "route": "/cordeiro-engenharia",
+      "heroInitial": 1,
+      "heroExit": {
+        "opacity": 0.655129,
+        "transform": "matrix(1, 0, 0, 1, 0, -30.6646)"
+      },
+      "textExit": true,
+      "textReentry": true,
+      "focusVisible": true
+    },
+    {
+      "route": "/v3-energia-solar",
+      "heroInitial": 1,
+      "heroExit": {
+        "opacity": 0.653646,
+        "transform": "matrix(1, 0, 0, 1, 0, -30.75)"
+      },
+      "textExit": true,
+      "textReentry": true,
+      "focusVisible": true
+    },
+    {
+      "route": "/dreamhome",
+      "heroInitial": 1,
+      "heroExit": {
+        "opacity": 0.682267,
+        "transform": "matrix(1, 0, 0, 1, 0, -29.1014)"
+      },
+      "textExit": true,
+      "textReentry": true,
+      "focusVisible": true
+    },
+    {
+      "motionEnabledByDefault": true,
+      "reducedMotionToggle": true,
+      "preferencePersistsAcrossReload": true,
+      "mobileCarouselFocus": true
+    },
+    {
+      "contentVisibleWithoutJavaScript": true
+    }
+  ],
+  "errors": []
+}

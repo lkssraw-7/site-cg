@@ -8,7 +8,7 @@ export default function Home() {
     <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <div id="inicio" className="hero-shell">
       <Header />
-      <main id="conteudo"><Hero /><CompaniesIntro /></main>
+      <main id="conteudo" tabIndex={-1}><Hero /><CompaniesIntro /></main>
     </div>
     <Footer />
   </>;

@@ -24,14 +24,19 @@ export function Header({ company }: { company?: CompanyId }) {
     const closeOutside = (event: PointerEvent) => {
       if (!header.current?.contains(event.target as Node)) setOpen(false);
     };
-    const desktop = window.matchMedia("(min-width: 801px)");
+    const desktop = window.matchMedia("(min-width: 1024px)");
     const closeOnDesktop = () => { if (desktop.matches) setOpen(false); };
     document.addEventListener("keydown", closeOnEscape);
     document.addEventListener("pointerdown", closeOutside);
+    const closeOnFocusOutside = (event: FocusEvent) => {
+      if (!header.current?.contains(event.target as Node)) setOpen(false);
+    };
+    document.addEventListener("focusin", closeOnFocusOutside);
     desktop.addEventListener("change", closeOnDesktop);
     return () => {
       document.removeEventListener("keydown", closeOnEscape);
       document.removeEventListener("pointerdown", closeOutside);
+      document.removeEventListener("focusin", closeOnFocusOutside);
       desktop.removeEventListener("change", closeOnDesktop);
     };
   }, [open]);
@@ -43,7 +48,7 @@ export function Header({ company }: { company?: CompanyId }) {
         {links.map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}
       </nav>
       <ButtonLink className="header-cta" href={contact} external>{company ? "Solicitar orçamento" : "Fale conosco"}</ButtonLink>
-      <button ref={trigger} className="menu-toggle" aria-label={open ? "Fechar menu" : "Abrir menu"} aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
+      <button type="button" ref={trigger} className="menu-toggle" aria-label={open ? "Fechar menu" : "Abrir menu"} aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
         {open ? <X aria-hidden="true" size={25} /> : <Menu aria-hidden="true" size={25} />}
       </button>
     </div>

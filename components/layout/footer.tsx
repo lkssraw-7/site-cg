@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button-link";
 import { GroupLogo } from "@/components/ui/brand";
 import { site, companies, companyContact } from "@/data/site";
+import { MotionToggle, Reveal } from "@/components/motion/motion-system";
 
 export function Footer({ company, compact = false }: { company?: CompanyId; compact?: boolean }) {
   const current = companies.find(c => c.id === company);
@@ -11,7 +12,7 @@ export function Footer({ company, compact = false }: { company?: CompanyId; comp
   return <footer id={compact ? "rodape" : "contato"} className="site-footer">
     <div className="container">
       {!compact && <div className="contact-heading">
-        <div><p className="eyebrow">Vamos construir o próximo passo</p><h2>O seu projeto começa<br />com uma boa conversa.</h2></div>
+        <Reveal variant="fade" once><p className="eyebrow">Vamos construir o próximo passo</p><h2>O seu projeto começa<br />com uma boa conversa.</h2></Reveal>
         <ButtonLink href={contact} external>Falar pelo WhatsApp</ButtonLink>
       </div>}
       <div className="footer-grid">
@@ -19,7 +20,7 @@ export function Footer({ company, compact = false }: { company?: CompanyId; comp
         <div className="footer-contact"><h3>Fale com a equipe</h3><a href={`mailto:${site.email}`}><Mail size={17} aria-hidden="true" />{site.email}</a><a href={site.phoneHref}><Phone size={17} aria-hidden="true" />{site.phone}</a><a className="second-phone" href={site.secondPhoneHref}>{site.secondPhone}</a></div>
         <div className="footer-location"><h3>Onde estamos</h3><p><MapPin size={17} aria-hidden="true" /><span>{site.location}<small>{site.address}</small></span></p></div>
       </div>
-      <div className="footer-bottom"><span>© {new Date().getFullYear()} Cordeiro Group. Todos os direitos reservados.</span><a href="#inicio">Voltar ao topo ↑</a></div>
+      <div className="footer-bottom"><span>© {new Date().getFullYear()} Cordeiro Group. Todos os direitos reservados.</span><div className="footer-actions"><MotionToggle /><a href="#inicio">Voltar ao topo ↑</a></div></div>
     </div>
   </footer>;
 }

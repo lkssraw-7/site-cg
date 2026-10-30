@@ -1,0 +1,12 @@
+{
+  "homeWidths": [
+    375,
+    768,
+    1024,
+    1440
+  ],
+  "fallbacks": [
+    "observer unavailable: content remains visible",
+    "animation unavailable: content remains visible"
+  ]
+}

@@ -12,13 +12,21 @@ Header, Footer, logos, contatos e botões são compartilhados. As páginas possu
 
 ## Motion
 
-- `components/motion/motion-system.tsx`: `MotionConfig reducedMotion="user"`, `useReducedMotion`, reveals de 20px/500ms, stagger de 65ms, imagens com escala máxima de 1.025 e hover de 4px.
+- `components/motion/motion-system.tsx` centraliza a preferência e quatro tratamentos seletivos: títulos com deslocamento de 24px/650ms, opacidade em 400ms, fotografias com escala 1.045 → 1 em 800ms e linhas de processo em 700ms. Saídas em 200ms; intervalos de 60ms apenas onde há sequência.
 - O HTML é visível por padrão: a animação progressiva inicia depois da hidratação. Não há conteúdo oculto dependente do carregamento de JavaScript.
-- Heroes coordenam imagem, marca, título, descrição e CTAs com atrasos de até 220ms.
-- Entradas ao rolar ocorrem uma única vez por montagem. Apenas `opacity` e `transform` são animados.
-- A preferência de movimento reduzido remove deslocamentos, escala, stagger e animação de carrossel por controles. A navegação por foco no carrossel é sempre instantânea.
-- `app/(ecosystem)/template.tsx` fornece entrada nas novas rotas. Não há saída que atrase navegação nem dependência de APIs experimentais do App Router.
+- Heroes coordenam título e descrição com intervalo de 60ms. Marcas, navegação e CTAs ficam estáveis.
+- Títulos selecionados entram e saem nas bordas da área visível, repetindo ao retornar. A opacidade geral do hero permanece estável durante a leitura; a imagem de fundo cresce até 1.06. Fotografias da galeria e linhas do processo entram uma vez. Apenas `opacity` e `transform` são animados.
+- Conforme escolha explícita do usuário em 29/10/2026, as animações ficam ativas por padrão, inclusive quando o sistema informa movimento reduzido. O botão “Reduzir animações” no rodapé desativa deslocamentos, escala, sequência e transições, e salva a escolha localmente. “Ativar animações” restaura os efeitos. Sem armazenamento disponível, a escolha vale durante a visita.
+- Conteúdos com foco de teclado aparecem imediatamente. A navegação por foco no carrossel é sempre instantânea. Não há saída que atrase navegação entre páginas nem dependência de APIs experimentais do App Router.
 - A demonstração DreamHome usa tabs com setas, Home/End, foco visível, painéis semânticos e anúncio da cena. Não controla aparelhos reais.
+
+## Validação das animações — 29/10/2026
+
+- Entrada, saída e reentrada dos textos nas quatro rotas; leitura do hero estável durante a rolagem.
+- Conteúdo visível ao receber foco, carrossel no celular e conteúdo legível sem JavaScript.
+- Botão de redução de movimento e persistência da preferência após recarregar.
+- Layouts em 375, 768, 1024 e 1440px, menus, links internos, formulários e cenas DreamHome conferidos localmente. Nenhum formulário foi enviado.
+- Revisão atual e decisões em `docs/REVISAO-EMIL.md`; evidências em `docs/emil-review/`. Os arquivos de `docs/design-review/` registram a revisão anterior. Prévia local em http://127.0.0.1:3001/; sem publicação.
 
 ## Fontes verificadas em 28/10/2026
 

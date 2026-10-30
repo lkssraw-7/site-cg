@@ -1,0 +1,58 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "variants": {
+        "rise": 2,
+        "fade": 5
+      },
+      "entryExitReentry": true,
+      "rapidScrollReversal": true,
+      "heroActionsRemainVisible": true,
+      "savedMotionPreference": true
+    },
+    {
+      "route": "/cordeiro-engenharia",
+      "variants": {
+        "rise": 2,
+        "fade": 3,
+        "line": 4
+      },
+      "entryExitReentry": true,
+      "rapidScrollReversal": true,
+      "heroActionsRemainVisible": true,
+      "savedMotionPreference": true
+    },
+    {
+      "route": "/v3-energia-solar",
+      "variants": {
+        "rise": 2,
+        "fade": 3,
+        "line": 5,
+        "settle": 3
+      },
+      "entryExitReentry": true,
+      "rapidScrollReversal": true,
+      "heroActionsRemainVisible": true,
+      "savedMotionPreference": true
+    },
+    {
+      "route": "/dreamhome",
+      "variants": {
+        "fade": 5,
+        "rise": 1,
+        "settle": 2
+      },
+      "entryExitReentry": true,
+      "rapidScrollReversal": true,
+      "heroActionsRemainVisible": true,
+      "savedMotionPreference": true
+    }
+  ],
+  "interactions": [
+    "Keyboard carousel and immediate scene changes; rapid pointer scene changes",
+    "Touch emulation: no sticky hover translation",
+    "All four pages readable without JavaScript"
+  ],
+  "errors": []
+}
