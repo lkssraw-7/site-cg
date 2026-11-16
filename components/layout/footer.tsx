@@ -5,8 +5,10 @@ import { ButtonLink } from "@/components/ui/button-link";
 import { GroupLogo } from "@/components/ui/brand";
 import { site, companies, companyContact } from "@/data/site";
 import { MotionToggle, Reveal } from "@/components/motion/motion-system";
+import { CinematicFooter } from "@/components/layout/cinematic-footer";
 
 export function Footer({ company, compact = false }: { company?: CompanyId; compact?: boolean }) {
+  if (!company && !compact) return <CinematicFooter />;
   const current = companies.find(c => c.id === company);
   const contact = current ? companyContact(current.contact) : site.whatsapp;
   return <footer id={compact ? "rodape" : "contato"} className="site-footer">

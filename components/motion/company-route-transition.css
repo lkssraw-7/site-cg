@@ -1,0 +1,18 @@
+.company-route-transition {
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+  pointer-events: auto;
+  background-color: #101925;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 16px 64px #0b172842;
+  will-change: top, left, width, height, opacity;
+}
+.company-route-transition::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #091522a8, #0915220a 45%, #0915227a);
+  pointer-events: none;
+}

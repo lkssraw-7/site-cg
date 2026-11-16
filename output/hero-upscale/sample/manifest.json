@@ -1,0 +1,21 @@
+{
+  "source": "casa-noite_2K_upscaled.mp4",
+  "source_sha256": "f8a4d66b1202294064f840cdf46e5d6039952f5516b74f388db87205f87b4973",
+  "first_frame": 14,
+  "last_frame": 14,
+  "frame_count_per_variant": 1,
+  "method": "Original video frames; Lanczos 1.5x; UnsharpMask radius 1.1, percent 25, threshold 3; WebP quality 90, method 5",
+  "variants": {
+    "2k": {
+      "width": 2560,
+      "height": 1440,
+      "bytes": 393168
+    },
+    "4k": {
+      "width": 3840,
+      "height": 2160,
+      "bytes": 672272
+    }
+  },
+  "elapsed_seconds": 3.2
+}

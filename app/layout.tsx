@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Sora } from "next/font/google";
 import { site } from "@/data/site";
 import "./globals.css";
 import "@/components/home/carousel.css";
 import { MotionProvider } from "@/components/motion/motion-system";
+import { CompanyRouteTransitionProvider } from "@/components/motion/company-route-transition";
 
 const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"], display: "swap" });
+const sora = Sora({ variable: "--font-sora", subsets: ["latin"], display: "swap", weight: ["400", "500", "600"] });
 
 export const metadata: Metadata = {
   title: "Cordeiro Group | Engenharia, Energia Solar e Automação",
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#111b27" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR" className={manrope.variable}><body>
+  return <html lang="pt-BR" data-scroll-behavior="smooth" className={`${manrope.variable} ${sora.variable}`}><body>
     <svg width="0" height="0" aria-hidden="true" className="brand-filters"><defs><filter id="brand-white" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -1 -1 -1 3 0" /></filter></defs></svg>
-    <MotionProvider>{children}</MotionProvider></body></html>;
+    <MotionProvider><CompanyRouteTransitionProvider>{children}</CompanyRouteTransitionProvider></MotionProvider></body></html>;
 }

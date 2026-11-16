@@ -5,7 +5,7 @@
 .company--solar { --company-accent: var(--solar-blue); }
 .company--dreamhome { --company-accent: var(--graphite); }
 .company .company-link { position: relative; display: flex; flex-direction: column; height: 100%; color: inherit; padding: 28px 32px; border: 1px solid var(--border); border-top: 2px solid var(--company-accent); border-radius: var(--radius); background: var(--surface); transition: border-color .2s ease, background .2s ease; }
-.company-index { color: var(--muted); font-size: var(--text-label); font-weight: 750; letter-spacing: .12em; margin-bottom: 30px; }
+.company-index { color: var(--muted); font-size: var(--text-label); font-weight: var(--weight-semibold); letter-spacing: .12em; margin-bottom: 30px; }
 .company--solar .company-link { background: var(--solar-paper); }
 .company--dreamhome .company-link { background: #f3f0eb; }
 .company-link:focus-visible { border-color: var(--company-accent); background: #fdfcfb; }
@@ -15,7 +15,7 @@
 .company .company-logo small { font-size: 11px; }
 .company .dreamhome-logo img { max-width: 100%; width: 214px; }
 .company-link > p { color: var(--muted); font-size: var(--text-body); line-height: 1.75; margin: 28px 0 24px; max-width: 32ch; }
-.company-discover { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: auto; padding-top: 20px; min-height: 44px; border-top: 1px solid var(--border); color: var(--company-accent); font-size: var(--text-small); font-weight: 800; }
+.company-discover { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: auto; padding-top: 20px; min-height: 44px; border-top: 1px solid var(--border); color: var(--company-accent); font-size: var(--text-small); font-weight: var(--weight-semibold); }
 @media (hover: hover) and (pointer: fine) { .company-link:hover .company-discover { text-decoration: underline; text-underline-offset: 4px; } }
 .company-discover svg { transition: transform .2s var(--ease-out); }
 @media (hover: hover) and (pointer: fine) {

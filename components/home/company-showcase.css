@@ -1,0 +1,127 @@
+.company-showcase {
+  display: flex;
+  align-items: center;
+  min-height: 100svh;
+  padding: clamp(64px, 8vw, 112px) 24px;
+  background: #fff;
+  color: var(--graphite);
+}
+.company-showcase__inner { width: min(1200px, 100%); margin: auto; }
+.company-showcase__eyebrow {
+  margin: 0 0 14px;
+  color: var(--orange-deep);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .17em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.company-showcase h2 {
+  margin: 0 auto clamp(32px, 4vw, 56px);
+  max-width: 20ch;
+  color: var(--graphite);
+  font-size: clamp(2.25rem, 4.4vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -.05em;
+  text-align: center;
+}
+.company-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(12px, 1.6vw, 24px);
+}
+.company-card {
+  position: relative;
+  min-width: 0;
+  height: clamp(295px, 29vw, 390px);
+  color: #fff;
+}
+.company-card:hover, .company-card:focus-within { z-index: 2; }
+.company-card .tilted-card { width: 100%; height: 100%; }
+.company-card .tilted-card__front > img { object-position: var(--card-position, center); }
+.company-card__shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, #091522a8 0%, #09152224 45%, #091522b8 100%);
+  pointer-events: none;
+}
+.company-card__trigger {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  padding: 24px;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+}
+.company-card__trigger:focus-visible { outline: 3px solid #ff963e; outline-offset: -6px; box-shadow: none; }
+.company-card__heading { position: absolute; top: 24px; left: 24px; right: 68px; display: grid; gap: 5px; }
+.company-card__number { color: #ffad6c; font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
+.company-card__heading strong { font-family: var(--font-heading); font-size: clamp(1.15rem, 1.9vw, 1.75rem); line-height: 1.2; letter-spacing: -.035em; }
+.company-card__heading small { color: #e5e9ed; font-size: .8rem; line-height: 1.4; }
+.company-card__toggle {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ffffff9c;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1;
+}
+.company-card__details {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 56px 24px 24px;
+  background: linear-gradient(180deg, #07111c00, #07111cec 34%, #07111cf5);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity .28s ease, transform .28s ease, visibility .28s;
+}
+.company-card:hover .company-card__details, .company-card:focus-within .company-card__details { opacity: 1; visibility: visible; transform: translateY(0); }
+.company-card__details p { max-width: 34ch; margin: 0 0 18px; color: #f0f1f2; font-size: .92rem; line-height: 1.55; }
+.company-card__details a { display: inline-flex; min-height: 44px; align-items: center; gap: 12px; color: #ffad6c; font-size: .86rem; font-weight: 600; pointer-events: auto; }
+.company-card__details a:hover { color: #fff; }
+.company-card__details a:focus-visible { outline-color: #ff963e; box-shadow: none; }
+.company-showcase__description { max-width: 48ch; margin: clamp(32px, 4vw, 56px) auto 0; color: #646d75; font-size: .95rem; line-height: 1.6; text-align: center; }
+@media (max-width: 800px) {
+  .company-card { height: 300px; }
+  .company-card__trigger { padding: 18px; }
+  .company-card__heading { top: 18px; left: 18px; right: 50px; }
+  .company-card__toggle { top: 17px; right: 17px; }
+  .company-card__heading strong { font-size: 1.12rem; }
+  .company-card__details { padding: 48px 18px 18px; }
+  .company-card__details p { font-size: .82rem; }
+}
+@media (max-width: 700px) {
+  .company-showcase { min-height: 0; padding: 64px 18px 72px; }
+  .company-showcase h2 { max-width: 15ch; margin-bottom: 30px; font-size: clamp(2.15rem, 8vw, 3rem); }
+  .company-showcase__grid { grid-template-columns: 1fr; gap: 14px; }
+  .company-card { height: 225px; }
+  .company-card__details { padding: 20px 18px 14px; }
+  .company-card__details p { max-width: 28ch; margin: 0 0 3px; font-size: .8rem; line-height: 1.35; }
+  .company-card__details a { min-height: 38px; font-size: .8rem; }
+  .company-card__heading { right: 52px; }
+  .company-showcase__description { margin-top: 30px; font-size: .875rem; }
+}
+@media (hover: none) {
+  .company-card__details { opacity: 1; visibility: visible; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .company-card__details { transition: none; }
+}
+html[data-motion="reduced"] .company-card__details { transition: none; }

@@ -1,0 +1,136 @@
+.solar-page .site-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 40;
+  color: #fff;
+  background: transparent;
+}
+.solar-page .site-header .header-inner { border-bottom: 0; }
+.solar-page .site-header .solar-logo { color: #fff; }
+.solar-page .site-header .desktop-nav a { color: #fff; }
+.solar-page .site-header .menu-toggle { color: #fff; border-color: #ffffffa6; }
+.solar-page .site-header.is-open { background: #121c2a; }
+.solar-page .site-header .mobile-nav { background: #121c2a; border-color: #ffffff3d; }
+.solar-page .site-header .mobile-nav a:not(.button) { color: #fff; }
+
+.v3-cinema-track { position: relative; background: #122338; }
+.solar-page .v3-cinema-stage {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100svh;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  background: #122338;
+}
+.v3-cinema-poster, .v3-cinema-video { position: absolute; inset: 0; width: 100%; height: 100%; }
+.v3-cinema-poster { z-index: -3; }
+.solar-page .v3-cinema-poster img, .v3-cinema-video { object-fit: cover; object-position: 70% center; }
+.v3-cinema-video { z-index: -2; opacity: 0; pointer-events: none; }
+.v3-cinema-video[data-ready="true"] { opacity: 1; }
+.v3-cinema-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(90deg, #071626a8 0%, #07162678 35%, #07162612 78%), linear-gradient(0deg, #0716268a 0%, transparent 42%);
+}
+.v3-cinema-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: clamp(105px, 15vh, 160px);
+  padding-bottom: clamp(48px, 8vh, 90px);
+}
+.v3-cinema-intro { max-width: 720px; opacity: var(--v3-intro-opacity, 1); transform: translate3d(0, var(--v3-intro-y, 0px), 0); }
+.v3-cinema-eyebrow { margin: 0 0 18px; color: #ffb983; font-size: .79rem; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+.solar-page .v3-cinema-stage h1 {
+  max-width: 12ch;
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: clamp(3rem, 5.5vw, 6rem);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  text-shadow: 0 2px 24px #0716264d;
+}
+.v3-cinema-description { max-width: 46ch; margin: 0; color: #eff3f7; font-size: clamp(1rem, 1.4vw, 1.16rem); line-height: 1.65; text-shadow: 0 1px 10px #07162666; }
+.v3-cinema-hint { margin: clamp(24px, 5vh, 52px) 0 0; color: #f8fbffdb; font-size: .85rem; font-weight: 650; letter-spacing: .05em; opacity: var(--v3-hint-opacity, 1); }
+.v3-cinema-hint span { margin-right: 9px; color: #ff8826; font-size: 1.2rem; }
+.v3-cinema-arrival {
+  position: absolute;
+  left: 0;
+  bottom: clamp(48px, 8vh, 90px);
+  max-width: 480px;
+  opacity: var(--v3-arrival-opacity, 0);
+  transform: translate3d(0, var(--v3-arrival-y, 24px), 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.v3-cinema-arrival p { margin: 0; font-family: var(--font-heading); font-size: clamp(1.65rem, 3vw, 2.6rem); line-height: 1.18; font-weight: 600; letter-spacing: -.04em; text-shadow: 0 2px 18px #07162666; }
+.solar-page .v3-cinema-stage .image-caption { z-index: 3; color: #ffffffb8; }
+.v3-cinema-track:not([data-animated]) .v3-cinema-hint { display: none; }
+.v3-cinema-track:not([data-animated]) .v3-cinema-arrival { position: static; opacity: 1; transform: none; margin-top: 26px; gap: 0; }
+.v3-cinema-track:not([data-animated]) .v3-cinema-arrival p { display: none; }
+
+/* Carry the final house frame into the next section, then let it resolve to white. */
+.solar-page .solar-benefits.section-pad {
+  position: relative;
+  isolation: isolate;
+  padding-top: clamp(270px, 41svh, 470px);
+  background: #fff;
+}
+.solar-page .solar-benefits::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 100svh;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to bottom, transparent 0%, #ffffff12 13%, #ffffffd9 39%, #fff 58%),
+    linear-gradient(90deg, #071626a8 0%, #07162678 35%, #07162612 78%),
+    linear-gradient(0deg, #0716268a 0%, transparent 42%),
+    url("/images/v3-house-arrival.jpg");
+  background-size: cover;
+  background-position: 70% center;
+}
+.solar-page .solar-benefits > .container { position: relative; }
+
+@media (max-width: 800px) {
+  .solar-page .site-header .header-inner { height: 78px; }
+  .solar-page .v3-cinema-poster img, .v3-cinema-video { object-position: 78% center; }
+  .v3-cinema-shade { background: linear-gradient(90deg, #071626ba, #0716263d 85%), linear-gradient(0deg, #071626a3, transparent 60%); }
+  .v3-cinema-content { padding-top: 115px; padding-bottom: 58px; }
+  .solar-page .solar-benefits::before { background-position: 78% center; }
+}
+@media (max-width: 540px) {
+  .solar-page .site-header .solar-logo { transform: scale(.78); transform-origin: left center; }
+  .solar-page .v3-cinema-poster img, .v3-cinema-video { object-position: 83% center; }
+  .v3-cinema-content { padding-top: 100px; padding-bottom: 54px; }
+  .solar-page .v3-cinema-stage h1 { font-size: clamp(2.4rem, 10vw, 3.25rem); max-width: 11ch; margin-bottom: 16px; }
+  .v3-cinema-eyebrow { font-size: .68rem; letter-spacing: .11em; margin-bottom: 14px; }
+  .v3-cinema-description { font-size: .93rem; line-height: 1.55; max-width: 31ch; }
+  .v3-cinema-hint { margin-top: 22px; }
+  .v3-cinema-arrival { bottom: 54px; max-width: 290px; }
+  .v3-cinema-arrival .button { max-width: 100%; }
+  .solar-page .solar-benefits.section-pad { padding-top: 32svh; }
+  .solar-page .solar-benefits::before { background-position: 83% center; }
+}
+@media (max-height: 620px) {
+  .v3-cinema-content { padding-top: 86px; padding-bottom: 30px; }
+  .solar-page .v3-cinema-stage h1 { font-size: clamp(2rem, 5vw, 3.4rem); }
+  .v3-cinema-hint { margin-top: 14px; }
+  .v3-cinema-arrival { bottom: 30px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .solar-page .solar-benefits.section-pad { padding-top: 96px; }
+  .solar-page .solar-benefits::before { display: none; }
+}
+html[data-motion="reduced"] .solar-page .solar-benefits.section-pad { padding-top: 96px; }
+html[data-motion="reduced"] .solar-page .solar-benefits::before { display: none; }

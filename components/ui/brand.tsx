@@ -1,8 +1,9 @@
 import Image from "next/image";
 
-export function GroupLogo({ light = false }: { light?: boolean }) {
-  return <span className={`group-logo${light ? " group-logo--light" : ""}`}>
-    <Image src="/logos/cordeiro-group.png" alt="Cordeiro Group" width={2360} height={1184} sizes="350px" priority />
+/** Approved Figma composition 39:14: outlined Sora lettering + original symbol. */
+export function GroupLogo({ light = false, sizes = "350px" }: { light?: boolean; sizes?: string }) {
+  return <span className={`group-logo ${light ? "group-logo--light" : "group-logo--dark"}`} role="img" aria-label="Cordeiro Group">
+    <Image src="/logos/cordeiro-group-sora.svg" alt="" aria-hidden="true" width={574} height={153} sizes={sizes} unoptimized priority />
   </span>;
 }
 
