@@ -1,0 +1,35 @@
+.cinema-track, .cinema-stage { position: relative; }
+.cinema-stage { background: var(--background); isolation: isolate; }
+.cinema-stage .hero-presentation[inert] { pointer-events: none; }
+.cinema-anchor { position: absolute; top: 500svh; width: 1px; height: 1px; pointer-events: none; }
+.cinema-stage .hero-presentation { background: #101925 url('/video/house-poster.jpg') center / cover no-repeat; }
+.cinema-stage .hero-background-shade { z-index: -1; }
+[data-cinema] .cinema-stage { min-height: 100svh; }
+[data-cinema] .hero-presentation[data-animated] { position: absolute; inset: 0 0 auto; z-index: 4; height: 100svh; background: transparent; opacity: var(--hero-alpha, 1); }
+[data-cinema] .hero-sequence__sticky { position: relative; }
+[data-cinema] .presence-panel { background: transparent; }
+.cinema-space { position: absolute; inset: 0; z-index: 0; background: #061010; opacity: var(--space-alpha, 1); pointer-events: none; }
+.cinema-film { position: absolute; inset: 0 0 auto; height: 100svh; overflow: hidden; z-index: 2; pointer-events: none; }
+.cinema-house, .cinema-orbit, .cinema-earth-still, .cinema-film video { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cinema-house { background: url('/video/house-poster.jpg') center / cover; opacity: var(--house-alpha, 1); }
+.cinema-orbit { inset: 0 auto auto 0; width: 1920px; height: 1080px; transform-origin: 0 0; background: url('/video/clouds-poster.jpg') center / cover; opacity: var(--film-alpha, 0); }
+.cinema-earth-still { background: url('/video/earth-poster.jpg') center / cover; opacity: var(--fallback-orbit, 0); }
+.cinema-film video { object-fit: cover; opacity: 0; }
+.cinema-film video[data-ready] { opacity: 1; }
+.cinema-orbit[data-still] video { opacity: 0; }
+[data-cinema] .presence-visual { opacity: var(--globe-alpha, 0); transform: translateY(var(--globe-shift, 0px)); }
+[data-cinema] :is(.presence-map-details, .presence-globe-labels, .presence-static-label, .presence-origin, .presence-globe-hint) { opacity: var(--detail-alpha, 0); }
+[data-cinema] :is(.presence-eyebrow, .presence-copy h2) { --entry: var(--heading-alpha, 0); }
+[data-cinema] :is(.presence-company, .presence-description) { --entry: var(--body-alpha, 0); }
+[data-cinema] :is(.presence-overview, .presence-note) { --entry: var(--stat-alpha, 0); }
+[data-cinema] :is(.presence-copy > *, .presence-overview, .presence-note) { opacity: var(--entry); transform: translateY(calc((1 - var(--entry)) * 14px)); }
+
+/* Retain the same controls in shorter portrait and laptop viewports. */
+@media (max-height: 759px) and (max-width: 540px) {
+  .cinema-stage .hero-presentation[data-animated] .hero { padding-top: 94px; }
+  .cinema-stage .hero-presentation[data-animated] .hero-bottom { bottom: 20px; padding-block: 10px; }
+  .cinema-stage .hero-presentation .benefits { gap: 6px; }
+}
+@media (max-height: 699px) and (min-width: 541px) {
+  .cinema-stage .hero-presentation[data-animated] .hero { padding-top: 105px; }
+}

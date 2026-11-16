@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { BatteryCharging, ChartNoAxesCombined, Leaf, Sun } from "lucide-react";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { ContactCTA, EcosystemNav, ProcessTimeline, ProjectsGallery, SectionHeading, Segments, ServiceHero, ServicesGrid } from "@/components/ecosystem/shared";
+import { ContactCTA, EcosystemNav, ProcessTimeline, ProjectsGallery, SectionHeading, Segments, ServicesGrid } from "@/components/ecosystem/shared";
+import { V3CinemaHero } from "@/components/ecosystem/v3-cinema-hero";
+import { CompanyLogo } from "@/components/ui/brand";
 import { solarProjects, solarServices, solarSteps } from "@/data/ecosystem";
 
 const title = "V3 Energia Solar | Sistemas fotovoltaicos";
@@ -11,9 +13,9 @@ export const metadata: Metadata = { title, description, openGraph: { title, desc
 
 export default function SolarPage() {
   return <div className="service-page solar-page" id="inicio">
-    <a className="skip-link" href="#conteudo">Pular para o conteúdo</a><Header company="solar" />
+    <a className="skip-link" href="#conteudo">Pular para o conteúdo</a><Header company="solar" hero heroBrand={<CompanyLogo company="solar" />} />
     <main id="conteudo" tabIndex={-1}>
-      <ServiceHero company="solar" title="A energia do sol. Um novo futuro para você." description="Transforme a energia que você consome em novas possibilidades. Sistemas fotovoltaicos para sua casa ou empresa, do projeto à instalação." image="/images/solar-hero.webp" alt="Conceito ilustrativo de painéis fotovoltaicos no telhado de uma residência" secondary="Conhecer soluções" />
+      <V3CinemaHero />
       <section className="solar-benefits section-pad" aria-labelledby="solar-benefits-title"><div className="container">
         <SectionHeading eyebrow="Por que energia solar?" title="Uma escolha que olha para a frente." id="solar-benefits-title" />
         <div className="solar-benefits-grid">{[

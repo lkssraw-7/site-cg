@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="550" height="550" viewBox="0 0 550 550" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Globe Sphere">
+<use xlink:href="#stroke0_0_116" fill="white"/>
+<use xlink:href="#stroke0_0_116" fill="url(#paint0_radial_0_116)"/>
+<path d="M549.5 275C549.5 426.602 426.602 549.5 275 549.5C123.398 549.5 0.5 426.602 0.5 275C0.5 123.398 123.398 0.5 275 0.5C426.602 0.5 549.5 123.398 549.5 275Z" stroke="#17212C"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_0_116" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(242 253) scale(275)">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.78" stop-color="#808587" stop-opacity="0.015"/>
+<stop offset="1" stop-color="#2E363D" stop-opacity="0.1"/>
+</radialGradient>
+<path id="stroke0_0_116" d="M550 275C550 426.878 426.878 550 275 550C123.122 550 0 426.878 0 275C0 123.122 123.122 0 275 0C426.878 0 550 123.122 550 275Z"/>
+</defs>
+</svg>
